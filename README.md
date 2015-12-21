@@ -4,11 +4,11 @@ iOS Pre-work: Tip Calculator App @codepath
 
 # Pre-work - Tippy
 
-**Name of your app** is a tip calculator application for iOS.
+**Tippy** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Gerardo Vazquez**
 
-Time spent: **X** hours spent in total
+Time spent: **1~2** hours spent in total
 
 ## User Stories
 
@@ -40,7 +40,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2015] [Gerardo Vazquez]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
