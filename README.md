@@ -8,23 +8,27 @@ iOS Pre-work: Tip Calculator App @codepath
 
 Submitted by: **Gerardo Vazquez**
 
-Time spent: **2~3** hours spent in total
+Time spent: **8~9** hours spent in total. A few days working in this project with breaks. 
 
 ## User Stories
 
 The following **required** functionality is complete:
-* [✓] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* User can enter a bill amount, choose a tip percentage, and see the tip and total values. ✓
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
+* Settings page to change the default tip percentage. ✓
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* Remembering the bill amount across app restarts (if <10mins)
+* Using locale-specific currency and currency thousands separators. ✓
+* [ ]Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
+* Settings page to change the default tip percentage. ✓
+* Settings page background color changed. ✓
+* App icon. ✓
+* Launch Screen. ✓
+* Auto layout in views. ✓
 
-- [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough 
 
@@ -36,8 +40,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-* I took long playing with gestures.
-* The app is for iPhone 6. 
+* I struggled to undestand Swift documentation.
+* The app will work for all iPhone screen sizes in portrait. 
+
 
 ## License
 
