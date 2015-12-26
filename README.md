@@ -1,37 +1,27 @@
 # Tip-Calculator-App
-iOS Pre-work: Tip Calculator App @codepath
-
-
-# Pre-work - Tippy
-
-**Tips** is a tip calculator application for iOS.
+# Pre-work - iOS Pre-work: Tip Calculator App @codepath
 
 Submitted by: **Gerardo Vazquez**
-
-Time spent: **8~9** hours spent in total. A few days working in this project with breaks. 
+Time spent: **9~10** hours spent in total. A few days working in this project with breaks. 
 
 ## User Stories
 
 The following **required** functionality is complete:
-* [] User can enter a bill amount, choose a tip percentage, and see the tip and total values. ✓
+* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values. ✓
 
 The following **optional** features are implemented:
-* [ ]Settings page to change the default tip percentage. ✓
-* [ ] UI animations
-* [ ]Remembering the bill amount across app restarts (if <10mins)
-* [ ]Using locale-specific currency and currency thousands separators. ✓
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [ ] Settings page to change the default tip percentage. ✓
+* [ ] Remembering the bill amount across app restarts. ✓
+* [ ] Using locale-specific currency and currency thousands separators. ✓
 
 The following **additional** features are implemented:
-* Settings page to change the default tip percentage. ✓
-* Settings page background color changed. ✓
-* App icon. ✓
-* Launch Screen. ✓
-* Auto layout in views. ✓
-
+* [ ] Settings page to change the default tip percentage. ✓
+* [ ] Settings page background color changed. ✓
+* [ ] App icon. ✓
+* [ ] Launch Screen. ✓
+* [ ] Auto layout in views. ✓
 
 ## Video Walkthrough 
-
 Here's a walkthrough of implemented user stories:
 
 <img src='https://raw.githubusercontent.com/gvzq/Tip-Calculator-App/master/Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
@@ -39,10 +29,8 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
 * I struggled to undestand Swift documentation.
-* The app will work for all iPhone screen sizes in portrait. 
-
+* The app will work for all iPhone screen sizes in portrait.
 
 ## License
 
