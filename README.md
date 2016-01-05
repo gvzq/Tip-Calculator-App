@@ -1,5 +1,4 @@
 # Tip-Calculator-App
-# Pre-work - iOS Pre-work: Tip Calculator App @codepath
 
 Submitted by: **Gerardo Vazquez**
 Time spent: **9~10** hours spent in total. A few days working in this project with breaks. 
