@@ -10,56 +10,47 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    @IBOutlet weak var customField: UITextField!
-    @IBOutlet weak var percentControl: UISegmentedControl!
+    
+    @IBOutlet weak var percentLabel: UILabel!
+    @IBOutlet weak var percentSlider: UISlider!
+    @IBOutlet weak var numLabel: UILabel!
+    
+    var tipValue: Double = 0
+    var temp: Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Settings"
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        tipValue = defaults.doubleForKey("default_tip_percentage")
+        tipValue = tipValue*100
+        
+        percentSlider.value = Float(tipValue)
+        let num = "\(Int(percentSlider.value))" + "%"
+        numLabel.text = num
     }
+    
+    @IBAction func onChange(sender: AnyObject) {
+        let num = "\(Int(percentSlider.value))" + "%"
+        numLabel.text = num
+    }
+    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.view.backgroundColor = UIColor.darkGrayColor()
-    }
-    
-    @IBAction func onEdit(sender: AnyObject) {
-        //print("click control")
-//        let options = [0.0, 0.18, 0.20,0.22, 100]
-//        let percentage = options[percentControl.selectedSegmentIndex]
-//        
-//        if (percentage == 100){
-//            let billAmount = NSString(string: customField.text!).doubleValue
-//            let defaults = NSUserDefaults.standardUserDefaults()
-//            defaults.setDouble((billAmount)/100, forKey: "default_tip_percentage")
-//            defaults.synchronize()
-//        }
-//        else{
-//            let defaults = NSUserDefaults.standardUserDefaults()
-//            defaults.setDouble(percentage, forKey: "default_tip_percentage")
-//        }
     }
     
     @IBAction func onTap(sender: AnyObject) {
-        view.endEditing(true)
+        //view.endEditing(true)
     }
 
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(animated: Bool){
         super.viewWillDisappear(animated)
-        
-        let options = [0.0, 0.18, 0.20,0.22, 100]
-        let percentage = options[percentControl.selectedSegmentIndex]
-        
-        if (percentage == 100){
-            let billAmount = NSString(string: customField.text!).doubleValue
-            let defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setDouble((billAmount)/100, forKey: "default_tip_percentage")
-            defaults.synchronize()
-        }
-        else{
-            let defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setDouble(percentage, forKey: "default_tip_percentage")
-        }
+        let defaults = NSUserDefaults.standardUserDefaults()
+        tipValue = Double(percentSlider.value)/100
+        defaults.setDouble(tipValue, forKey: "default_tip_percentage")
+        defaults.synchronize()
     }
     
     override func didReceiveMemoryWarning() {
