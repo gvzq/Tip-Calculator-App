@@ -1,26 +1,29 @@
 # Tip-Calculator-App
 
 Submitted by: **Gerardo Vazquez**
-Time spent: **9~10** hours spent in total. A few days working in this project with breaks. 
+Time spent: **16~17** hours spent in total. A few days working in this project with breaks.
 
 ## User Stories
 
 The following **required** functionality is complete:
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values. ✓
+* [Yes] User can enter a bill amount, choose a tip percentage, and see the tip and total values. ✓
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage. ✓
-* [ ] Remembering the bill amount across app restarts. ✓
-* [ ] Using locale-specific currency and currency thousands separators. ✓
+* [Yes] Settings page to change the default tip percentage.✓
+* [Yes] UI animations✓
+* [Yes] Remembering the bill amount across app restarts (if <10mins)✓
+* [Yes] Using locale-specific currency and currency thousands separators.✓
+* [Yes] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.✓
 
 The following **additional** features are implemented:
-* [ ] Settings page to change the default tip percentage. ✓
-* [ ] Settings page background color changed. ✓
-* [ ] App icon. ✓
-* [ ] Launch Screen. ✓
-* [ ] Auto layout in views. ✓
+* [Yes] Use of slider for custom percentage. ✓
+* [Yes] Settings page to change the default tip percentage. ✓
+* [Yes] Views background color changed. ✓
+* [Yes] App icon. ✓
+* [Yes] Launch Screen. ✓
+* [Yes] Auto layout in views. ✓
 
-## Video Walkthrough 
+## Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
 <img src='https://raw.githubusercontent.com/gvzq/Tip-Calculator-App/master/Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
