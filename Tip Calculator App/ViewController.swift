@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     var wasEmpty: Bool = true
     var tipValue: Double = 0
     @IBOutlet weak var d: UILabel!
+    @IBOutlet weak var twoTotal: UILabel!
+    @IBOutlet weak var threeTotal: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +30,12 @@ class ViewController: UIViewController {
         tipLabel.alpha                      = 0
         totalLabel.alpha                    = 0
         totalAmountLabel.alpha              = 0
-        tipPercentLabel.alpha               = 0
         tipControl.alpha                    = 0
-        
-        billAmountLabel.frame = CGRectOffset(billAmountLabel.frame, 0, 120)
+        tipPercentLabel.alpha               = 0
+        d.alpha                             = 0
+        twoLabel.alpha                      = 0
+        twoTotal.alpha                      = 0
+        threeTotal.alpha                    = 0
         billField.frame = CGRectOffset(billField.frame, 0, 120)
         billField.becomeFirstResponder()
     }
@@ -52,6 +56,9 @@ class ViewController: UIViewController {
             tipControl.selectedSegmentIndex = 2
         }
         else {
+            let percent = "%"
+            let val = String(Int(tipValue*100)) + percent
+            tipControl.setTitle(String(val), forSegmentAtIndex: 3)
             tipControl.selectedSegmentIndex = 3
         }
 
@@ -115,10 +122,14 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.6, animations: {
                 self.tipLabel.alpha         = 1
                 self.totalLabel.alpha       = 1
-                self.tipPercentLabel.alpha  = 1
                 self.tipLabel.alpha         = 1
                 self.totalAmountLabel.alpha = 1
                 self.tipControl.alpha       = 1
+                self.tipPercentLabel.alpha  = 1
+                self.d.alpha                = 1
+                self.twoLabel.alpha         = 1
+                self.twoTotal.alpha         = 1
+                self.threeTotal.alpha       = 1
             })
             
             UIView.animateWithDuration(0.2, animations: {
@@ -130,12 +141,16 @@ class ViewController: UIViewController {
         else if !(billField.hasText() || wasEmpty)      // DeMorgan of !hasText && !wasEmpty
         {
             UIView.animateWithDuration(0.6, animations: {
-                self.tipLabel.alpha              = 0
-                self.totalLabel.alpha            = 0
-                self.tipPercentLabel.alpha        = 0
-                self.tipLabel.alpha      = 0
-                self.totalAmountLabel.alpha = 0
-                self.tipControl.alpha                    = 0
+                self.tipLabel.alpha             = 0
+                self.totalLabel.alpha           = 0
+                self.tipLabel.alpha             = 0
+                self.totalAmountLabel.alpha     = 0
+                self.tipControl.alpha           = 0
+                self.tipPercentLabel.alpha      = 0
+                self.d.alpha                    = 0
+                self.twoLabel.alpha             = 0
+                self.twoTotal.alpha             = 0
+                self.threeTotal.alpha           = 0
             })
             
             UIView.animateWithDuration(0.2, delay: 0.3, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
